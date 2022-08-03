@@ -15,5 +15,5 @@ clean:
 	rm -rf $(BUILD_PATH)
 
 $(BUILD_PATH)/skhd: $(SKHD_SRC)
-	mkdir -p $(BUILD_PATH)
+	mkdir -p ./bin
 	clang $^ $(BUILD_FLAGS) $(FRAMEWORKS) -o $@
